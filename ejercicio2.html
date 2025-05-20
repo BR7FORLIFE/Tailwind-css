@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Login Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="min-h-screen flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1663970206579-c157cba7edda?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwcGFyYSUyMHBjfGVufDB8fDB8fHww');"
+  >
+    <div class="bg-gray-900 bg-opacity-90 rounded-lg shadow-2xl px-10 py-8 w-full max-w-md">
+      <!-- Logo -->
+      <div class="flex justify-center mb-6">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify" class="w-10 h-10">
+        <span class="text-white text-2xl font-semibold ml-2">Spotify</span>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex justify-center mb-6 space-x-4">
+        <button id="signInTab" class="text-white border-b-2 border-green-500 px-4 pb-2 font-semibold">SIGN IN</button>
+        <button id="signUpTab" class="text-white px-4 pb-2 hover:border-b-2 hover:border-green-500">SIGN UP</button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form id="signInForm" class="space-y-4">
+        <input type="text" placeholder="Username" class="w-full px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none" />
+        <input type="password" placeholder="Password" class="w-full px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none" />
+        <div class="flex items-center text-white text-sm">
+          <input type="checkbox" id="staySigned" class="mr-2" />
+          <label for="staySigned">stay signed in</label>
+        </div>
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-full font-semibold shadow-md transition duration-200">
+          SIGN IN
+        </button>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signUpForm" class="space-y-4 hidden">
+        <input type="text" placeholder="Full Name" class="w-full px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none" />
+        <input type="email" placeholder="Email" class="w-full px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none" />
+        <input type="password" placeholder="Create Password" class="w-full px-4 py-2 rounded-full bg-white text-gray-800 focus:outline-none" />
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-full font-semibold shadow-md transition duration-200">
+          SIGN UP
+        </button>
+      </form>
+
+      <!-- Forgot Password -->
+      <div class="text-center mt-4">
+        <a href="#" class="text-gray-400 text-sm hover:underline">Forgot Password?</a>
+      </div>
+    </div>
+
+    <script>
+      const signInTab = document.getElementById('signInTab');
+      const signUpTab = document.getElementById('signUpTab');
+      const signInForm = document.getElementById('signInForm');
+      const signUpForm = document.getElementById('signUpForm');
+
+      signInTab.addEventListener('click', () => {
+        signInForm.classList.remove('hidden');
+        signUpForm.classList.add('hidden');
+        signInTab.classList.add('border-green-500');
+        signUpTab.classList.remove('border-green-500');
+      });
+
+      signUpTab.addEventListener('click', () => {
+        signUpForm.classList.remove('hidden');
+        signInForm.classList.add('hidden');
+        signUpTab.classList.add('border-green-500');
+        signInTab.classList.remove('border-green-500');
+      });
+    </script>
+  </body>
+</html>
