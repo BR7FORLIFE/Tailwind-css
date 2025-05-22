@@ -1,30 +1,25 @@
-# Tailwind Practical Exercises 😀😀
+# Ejercicios Prácticos de Tailwind 😀😀
 
-Welcome! This repository contains practical exercises for learning and practicing [Tailwind CSS](https://tailwindcss.com/).
+¡Bienvenido! Este repositorio contiene ejercicios prácticos para aprender y practicar [Tailwind CSS](https://tailwindcss.com/).
 
-## About
+## 📘 Acerca del Proyecto
 
-This project is designed to help users improve their skills with Tailwind CSS through hands-on examples.
+Este proyecto está diseñado para ayudarte a mejorar tus habilidades con Tailwind CSS mediante ejemplos prácticos y ejercicios con código real.
 
-## How to Use
+## 🛠️ ¿Cómo usarlo?
 
-1. Clone this repository.
-2. Explore the different exercise folders.
-3. Follow the instructions in each exercise to practice Tailwind CSS concepts.
+1. Clona este repositorio.  
+2. Explora las diferentes carpetas de ejercicios.  
+3. Sigue las instrucciones dentro de cada ejercicio para practicar los conceptos de Tailwind CSS.
 
-## Requirements
+## ✅ Requisitos
 
-- Basic knowledge of HTML and CSS
-- [Tailwind CSS](https://tailwindcss.com/) installed in your project
-- CDN TailwindCSS in your HTML archive.
-````HTML
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-````
+- Conocimientos básicos de HTML y CSS  
+- Tener [Tailwind CSS](https://tailwindcss.com/) instalado en tu proyecto  
+- O usar el CDN de Tailwind directamente en tu archivo HTML:
 
-## Contributing
+```html
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+```
 
-Feel free to submit your own exercises or improvements via pull requests.
-
----
-
-###### BR7FORLIFE
+##### BR7FORLIFE
