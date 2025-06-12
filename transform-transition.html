@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition - Transform</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-screen h-screen grid place-content-center">
+    <section class="flex justify-center items-center p-3 gap-x-2">
+      <div
+        class="size-72 flex flex-col items-center justify-around bg-green-300 rounded-md transform hover:translate-x-3 hover:translate-y-3 hover:rotate-3 hover:skew-x-3 duration-500"
+      >
+        <h2 class="text-black font-mono text-lg">Exercise 1 - square rotate</h2>
+        <p class="text-xl text-black font-mono">Este es una info</p>
+      </div>
+
+      <div
+        class="size-72 flex flex-col items-center justify-center mt-2 p-2 text-lg text-center font-mono bg-cyan-300 rounded-md transition-all transform hover:scale-125 hover:text-white duration-1000 delay-100 ease-in-out"
+      >
+        <h2>Exercise 2 - Transition</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+          possimus vero
+        </p>
+      </div>
+
+      <div
+        class="relative size-72 flex flex-col items-center justify-center bg-purple-300 rounded-full"
+      >
+        <h2 class="absolute text-white text-3xl">Animations - Exercise 3</h2>
+        <picture class="hover:animate-spin">
+          <img
+            src="https://img.freepik.com/vector-gratis/fondo-espiral-blanco-negro_1048-16005.jpg?semt=ais_items_boosted&w=740"
+            alt=""
+          />
+        </picture>
+      </div>
+
+      <div class="size-72">
+        <picture>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/View_Ilha_Grande.JPG"
+            alt=""
+            class="object-fill"
+          />
+        </picture>
+      </div>
+    </section>
+  </body>
+</html>
