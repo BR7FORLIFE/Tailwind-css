@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vercel landing page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="relative w-screen h-screen bg-black text-white overflow-x-hidden"
+  >
+    <div>
+      <video
+        src="./assests/vercelApp/presentationVideo.mp4"
+        loop
+        autoplay
+        class="absolute top-0 -z-10"
+      ></video>
+    </div>
+    <header class="w-full h-auto flex flex-row justify-around items-center p-2">
+      <section class="flex flex-row gap-10 justify-center items-center">
+        <picture class="size-auto">
+          <img
+            src="./assests/vercelApp/vercelIcon.png"
+            alt="vercel icon"
+            class="w-24 h-auto object-cover"
+          />
+        </picture>
+        <div
+          class="group relative w-32 h-10 cursor-pointer flex flex-row justify-center items-center"
+        >
+          <p class="inline-flex flex-row gap-3 justify-center items-center">
+            <span
+              class="text-white/80 font-mono font-thin transition-colors group-hover:text-white group-hover:ease-in-out group-hover:duration-500"
+              >Products</span
+            ><img
+              src="./assests/vercelApp/trianguleIcon.png"
+              alt="triangule icon"
+              class="size-[9px] transform rotate-180 group-hover:rotate-0 group-hover:ease-in-out group-hover:duration-500"
+            />
+          </p>
+
+          <div
+            class="absolute opacity-0 top-12 items-center justify-center w-32 flex flex-col group-hover:opacity-100 group-hover:transition-all group-hover:origin-top group-hover:duration-600 z-10"
+          >
+            <span
+              class="text-white/80 font-mono font-thin mb-2 transition-colors hover:text-white hover:duration-500 hover:ease-in-out"
+              >FrameWorks</span
+            >
+            <ul>
+              <li
+                class="inline-flex flex-row-reverse gap-2 text-white opacity-60 transition-colors hover:opacity-100 hover:duration-500 hover:ease-in-out"
+              >
+                <span>Next Js</span
+                ><img
+                  src="./assests/vercelApp/iconNextjs.png"
+                  alt="icon nextjs"
+                  class="size-7"
+                />
+              </li>
+              <li
+                class="inline-flex flex-row-reverse gap-2 text-white opacity-60 transition-colors hover:opacity-100 hover:duration-500 hover:ease-in-out"
+              >
+                <span>TurboRepo</span
+                ><img
+                  src="./assests/vercelApp/turboRepoIcon.png"
+                  alt="turbo repo icon"
+                  class="size-7"
+                />
+              </li>
+              <li
+                class="inline-flex flex-row-reverse gap-2 text-white opacity-60 transition-colors hover:opacity-100 hover:duration-500 hover:ease-in-out"
+              >
+                <span>IA Sdk</span>
+                <img
+                  src="./assests/vercelApp/IAsdk.png"
+                  alt="ia sdk icon"
+                  class="size-8"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#"
+          ><span class="text-white/80 font-mono font-thin hover:text-white"
+            >Enterprise</span
+          ></a
+        >
+        <a href="#"
+          ><span class="text-white/80 font-mono font-thin hover:text-white"
+            >Docs</span
+          ></a
+        >
+        <a href="#"
+          ><span class="text-white/80 font-mono font-thin hover:text-white"
+            >Pricing</span
+          ></a
+        >
+      </section>
+
+      <div>
+        <button
+          class="h-auto text-white/90 font-mono bg-gray-900 px-4 py-1 border-1 rounded-lg border-white/50 transition-colors hover:bg-gray-500 hover:ease-linear hover:duration-200"
+        >
+          Log In
+        </button>
+        <button
+          class="h-auto text-white/90 font-mono bg-gray-900 px-4 py-1 border-1 rounded-lg border-white/50 transition-colors hover:bg-gray-500 hover:ease-linear hover:duration-200"
+        >
+          Contact
+        </button>
+        <button
+          class="h-auto text-black font-mono bg-white px-4 py-1 border-1 rounded-lg border-white"
+        >
+          Sign up
+        </button>
+      </div>
+    </header>
+
+    <main class="w-full h-full flex flex-row justify-center items-center">
+      <div
+        class="w-full h-full inline-flex flex-col justify-center items-center gap-10 transition backdrop-blur-sm ring-1 ring-white/20"
+      >
+        <h1 class="text-5xl font-mono font-bold">
+          Build and deploy on the AI Cloud.
+        </h1>
+        <p class="text-xl font-mono font-light text-white/80">
+          Vercel provides the developer tools and cloud infrastructure <br />
+          to build, scale, and secure a faster, more personalized web.
+        </p>
+
+        <div class="flex flex-row gap-3">
+          <button
+            class="bg-white text-black p-4 rounded-3xl font-mono font-light border border-black hover:bg-gray-200 transition"
+          >
+            Start Deploying
+          </button>
+
+          <button
+            class="bg-black border border-white px-9 py-2 rounded-3xl font-mono font-light hover:bg-gray-800 text-white transition"
+          >
+            Get a Demo
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
