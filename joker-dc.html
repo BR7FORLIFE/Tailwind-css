@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joker Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @font-face {
+        font-family: BBH;
+        src: url("./assests/joker-dc/BBHSansBartle-Regular.ttf");
+      }
+
+      body {
+        background-image: url("assests/joker-dc/joker-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: border-box;
+        font-family: BBH, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="box-content w-screen h-screen p-0 m-0 flex justify-center items-center"
+  >
+    <main class="w-full h-auto flex justify-start">
+      <section
+        class="w-auto h-auto flex flex-col gap-12 backdrop-blur-sm p-12 rounded-xl justify-start items-start"
+      >
+        <div>
+          <h1 class="text-white text-9xl font-semibold">JOKER</h1>
+          <span class="text-lg text-white/80">Published By DC</span>
+        </div>
+        <div class="inline-flex flex-col gap-4">
+          <h2 class="text-white font-semibold text-3xl font-mono">Power</h2>
+          <p class="max-w-[500px] text-xl font-sans font-bold text-white">
+            Complete unpredictability, Chaos Agent, Customized Weapons. Wields
+            toxin which causes victims to die Laughing
+          </p>
+        </div>
+        <div class="inline-flex flex-col justify-start items-center">
+          <img
+            src="./assests/joker-dc/mouse-scroll-icon.png"
+            alt="scroll mouse icon"
+            class="w-24 h-auto bg-cover"
+          />
+          <span class="text-white">Scroll Mouse</span>
+        </div>
+      </section>
+      <section></section>
+    </main>
+  </body>
 </html>
