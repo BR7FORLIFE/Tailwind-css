@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --font-josefin: "Josefin Sans";
+        --color-primary: #7700ff;
+      }
+
+      body {
+        font-family: var(--font-josefin);
+      }
+
+      button:last-child {
+        background-color: var(--color-primary);
+      }
+    </style>
+    <title>Stripe landing</title>
+  </head>
+  <body class="w-screen min-h-screen">
+    <div class="w-full h-20 flex justify-center items-center">
+      <header class="h-full w-[75%] flex justify-between">
+        <div class="flex justify-center items-center gap-8">
+          <h1 class="text-xl font-semibold font-sans">Stripe</h1>
+          <section class="group">
+            <nav>
+              <ul class="flex gap-8">
+                <li>Productos <span></span></li>
+                <li>Soluciones</li>
+                <li>Desarrolladores</li>
+                <li>Recursos</li>
+                <li>Tarifas</li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+        <div class="h-full flex justify-center items-center gap-2">
+          <button
+            class="rounded-lg px-6 py-3 bg-white text-orange-400 font-semibold text-sm flex justify-center items-center"
+          >
+            Inicia sessión
+          </button>
+          <button
+            class="rounded-lg py-2 px-3 bg-purple-800 text-white font-semibold text-sm flex justify-center items-center"
+          >
+            Contacta con ventas
+          </button>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
