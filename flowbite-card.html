@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowBite Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!--ring-inset es para colocar el ancho del anillo dentro del contenedor (border)-->
+  <body class="min-h-screen w-screen flex justify-center items-center">
+    <div
+      class="group isolate w-80 overflow-clip rounded-3xl ring-1 ring-inset ring-zinc-700/60 ring-offset-4 ring-offset-zinc-950 bg-zinc-900/80 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:ring-cyan-500/50"
+    >
+      <div
+        class="h-24 bg-gradient-to-br from-cyan-500/20 via-transparent to-fuchsia-500/20 rotate-[2deg] origin-top transition-transform duration-500 group-hover:rotate-0"
+      ></div>
+
+      <div class="space-y-3 p-6">
+        <span
+          class="inline-block rounded-full bg-cyan-500/10 px-3 py-1 text-xs tracking-widest uppercase"
+        >
+          Premium
+        </span>
+
+        <h2 class="text-2xl tracking-tight font-semibold">Design Challenge</h2>
+
+        <p class="max-w-prose leading-relaxed text-zinc-400">
+          Recreate this component from memory using uncommon Tailwind utilities
+          and without relying on traditional layout helpers.
+        </p>
+
+        <div class="divide-y divide-zinc-800">
+          <p class="py-2">✓ Glassmorphism feel</p>
+          <p class="py-2">✓ Animated hover state</p>
+          <p class="py-2">✓ Visual hierarchy</p>
+        </div>
+
+        <button
+          class="w-full rounded-xl bg-white py-3 text-black transition-all duration-300 group-hover:scale-[1.02]"
+        >
+          Start Challenge
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
